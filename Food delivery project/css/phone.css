@@ -1,0 +1,74 @@
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem ;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+#home{
+    height: 380px;
+    padding: 3px 68px;
+    
+}
+#home::before{
+    height: 480px;
+    
+}
+#home p{
+    font-size: 13px;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+    
+}
+#services .box{
+    margin: 10px 5px;
+
+}
+/* Clients section */
+#client{
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+}
+#client img{
+    width: 60px;
+    padding: 2px 5px;
+    height: auto;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 26px;
+}
+.btn{
+    font-size: 20px;
+    padding: 4px 8px;
+}
+#delivery #bike{
+    animation: bike 6s ease-in-out 1s infinite forwards;
+    position: relative;
+}  
+#delivery #foodorder{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left:50vw;
+} 
+@keyframes bike{
+    from{
+        left: 0;
+        
+    }
+    to{
+        left:45vw;
+    
+    }
+}

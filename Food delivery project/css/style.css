@@ -1,0 +1,291 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CSS vARIABLE */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* Navigation Bar:Logo and Image */
+#logo {
+    margin: 10px 24px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Tiro Bangla', serif;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 538px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bg/bg1.jpg) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 623px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* services section */
+#services {
+    margin: 30px;
+    display: flex;
+}
+
+#services .box {
+    background-color: hsl(0, 78%, 95%);
+    border: 3px solid brown;
+    padding: 20px;
+    padding: 30px;
+    margin: -10px 40px;
+    border-radius: 28px;
+
+}
+
+#services .box img {
+    /* width: 300px; */
+    display: block;
+
+    margin: auto;
+
+}
+#services .box #ordering{
+    width: 150px;
+    display: block;
+    margin:  auto;
+
+}
+#services .box #bulk{
+    width: 125px;
+    display: block;
+    margin:  auto;
+
+}
+#services .box #catering{
+    width: 225px;
+
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+#client-section {
+    position: relative;
+    /* height: 344px; */
+    /* border: 2px solid brown; */
+}
+
+#client-section::before {
+    content: "";
+    background: url(../img/bg/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item {
+    padding: 34px;
+
+}
+
+.client-item img {
+    height: 105px;
+
+}
+
+/* contact section */
+#contact {
+    position: relative;
+    height: 250px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bg/bg4.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 575px;
+    z-index: -1;
+    opacity: 0.7;
+
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size:1.1rem ;
+
+}
+
+footer {
+    background-color: black;
+    position: relative;
+    top: 314px;
+    color: white;
+    padding: 20px;
+
+
+}
+/* utility class */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.6rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.0rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 20px 20px;
+    font-family: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.center {
+    text-align: center;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#delivery #bike{
+    animation: bike 6s ease-in-out 1s infinite forwards;
+    position: relative;
+}  
+#delivery #foodorder{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left:70vw;
+} 
+@keyframes bike{
+    from{
+        left: 0;
+        
+    }
+    to{
+        left:65vw;
+    
+    }
+}
